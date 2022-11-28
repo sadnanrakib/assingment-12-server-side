@@ -26,7 +26,7 @@ async function run (){
 
         app.get('/allcategory/:category', async(req, res)=>{
           const category = req.params.category
-          console.log(category)
+          // console.log(category)
           const query = {category}
           const result = await PhonesCollection .find(query).toArray()
           res.send(result)
