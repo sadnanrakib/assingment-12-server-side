@@ -11,7 +11,7 @@ const app = express()
 // J2wHd32HmhcJ_Lm
 
 app.use(cors());
-// app.use(express.json());
+app.use(express.json());
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.tsk4obg.mongodb.net/?retryWrites=true&w=majority`;
 // console.log(process.env.DB_USER);
